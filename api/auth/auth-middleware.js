@@ -33,7 +33,8 @@ const restricted = (req, res, next) => {
       } else {
       req.decodedToken = decodedToken
       next();
-    })
+    }
+  })
 }
 
 const only = role_name => (req, res, next) => {
